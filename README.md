@@ -15,8 +15,8 @@ assert(a implies b);
 
 # Issues
 
-Operator `implies` is implemented as a macro. Internally it abuses operators `||` and `?:`. It works perfectly in
-almost all situations conceivable, except signle case where it is the left argument of the ternary operator `?:`.
+Operator `implies` is implemented as a macro. Internally, it abuses operators `||` and `?:`. It works perfectly in
+almost all situations conceivable, except single case where it is the left argument of the ternary operator `?:`.
 
 ```cpp
 (a implies b) ? "true case" : "false case" // parentheses are required here
