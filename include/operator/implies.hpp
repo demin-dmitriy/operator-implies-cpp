@@ -1,3 +1,5 @@
+#pragma once
+
 namespace implies_detail
 {
     struct NegationHelper final { };
